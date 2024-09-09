@@ -1,13 +1,22 @@
-import { useState } from 'react'
-import './App.css'
+
+import Player from "./components/Player.jsx";
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
-    <>
-        <h2>text</h2>
-    </>
+    <main>
+      <div id='game-container'>
+        <ol id='players'>
+          <Player initialName={'name1'}  symbol={'X'}></Player>
+          <Player initialName={'name2'} symbol={'O'}></Player>
+        </ol>
+
+        game board
+      </div>
+
+      log
+    </main>
   )
 }
 
