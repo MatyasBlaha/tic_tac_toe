@@ -98,7 +98,7 @@ function App() {
       <div id='game-container'>
         <ol id='players' className='highlight-player'>
           <Player
-              initialName={PLAYERS.O}
+              initialName={PLAYERS.X}
               symbol={'X'}
               isActive={activePlayer === 'X'}
               onChangeName={handlePlayerNameChange}>
